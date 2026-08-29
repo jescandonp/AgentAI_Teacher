@@ -25,8 +25,9 @@ Establecer un procedimiento riguroso y determinista para recibir código escrito
    - Ejecutar la herramienta `execution/code_checker.py` o revisar la estructura del código.
    - Detectar si el fallo ocurre en tiempo de compilación/parseo o en tiempo de ejecución.
 
-2. **Paso 2: Aislamiento del Punto de Falla**
+2. **Paso 2: Aislamiento del Punto de Falla y Consulta de Base de Conocimiento**
    - Ubicar el número de línea exacto y el estado de las variables involucradas antes de esa línea.
+   - En caso de errores sutiles (variables sin inicializar / UB en C++, o mutabilidad / aliasing / default arguments en Python), contrastar con las bases de conocimiento en `resources/knowledge/cpp/` o `resources/knowledge/python/`.
 
 3. **Paso 3: Construcción de Prueba de Escritorio (Traza)**
    - Elaborar una tabla de traza con un conjunto de datos pequeño (ej. un arreglo de 3 elementos o un número simple como `n = 4`).

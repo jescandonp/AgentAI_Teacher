@@ -25,8 +25,11 @@ AgentAI_Teacher/
 │   ├── python_student/     # Nicolás Escandón (Universidad EAN)
 │   └── cpp_student/        # Juan Coronado (Pontificia Universidad Javeriana)
 │
-├── resources/              # Material base y talleres de clase
-│   └── Students/
+├── resources/              # Material base, talleres y bases de conocimiento
+│   ├── knowledge/          # Bases de conocimiento técnico y pedagógico para el agente
+│   │   ├── cpp/            # C++ moderno, prevención de UB, gestión de memoria e inicialización
+│   │   └── python/         # Modelo de datos Python, aliasing, SOLID y scaffolding
+│   └── Students/           # Material de clase por estudiante
 │       ├── Nicolas_Escandon/
 │       └── Juan_Coronado/
 │

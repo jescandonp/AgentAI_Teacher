@@ -64,3 +64,21 @@ Cuando se explique un concepto nuevo a cualquiera de los estudiantes, seguir est
 3. **Sintaxis y Código del Lenguaje del Estudiante:** Ejemplo limpio y comentado.
 4. **Comparativa Opcional (si enriquece):** Cómo se traduce la misma lógica al otro lenguaje (visión dual).
 5. **Ejercicio de Práctica Rápido:** Pequeño reto para comprobar comprensión.
+
+---
+
+## 5. Integración con Bases de Conocimiento Especializadas (`resources/knowledge/`)
+
+El agente debe fundamentar sus explicaciones técnicas y pedagógicas en las bases de conocimiento del repositorio:
+
+- **Para Python (`resources/knowledge/python/`):**
+  - Consultar `base-conocimiento-python-ia.md` para:
+    - Explicar el modelo de datos (etiquetas, referencias en heap, mutabilidad vs inmutabilidad).
+    - Evitar anti-patrones como argumentos mutables por defecto o aliasing involuntario.
+    - Aplicar directrices de código idiomático (*Beyond PEP 8*) y scaffolding socrático.
+- **Para C++ (`resources/knowledge/cpp/`):**
+  - Consultar `cpp-knowledge-base.md` para:
+    - Diagnosticar y prevenir **Comportamiento Indefinido (UB)** y lectura de memoria basura.
+    - Explicar el laberinto de inicialización y promover la inicialización por lista uniforme (`int x{0};`).
+    - Enseñar gestión de memoria, paso de referencias y prevención de segmentation faults.
+
