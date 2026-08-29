@@ -1,0 +1,22 @@
+# Archivos intermedios y temporales
+.tmp/*
+!.tmp/.gitkeep
+
+# Variables de entorno y secretos
+.env
+credentials.json
+token.json
+
+# Entornos virtuales y caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
